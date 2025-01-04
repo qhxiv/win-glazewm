@@ -1,0 +1,56 @@
+:root {
+  --gray1: #111111;
+  --gray2: #313131;
+  --gray3: #bbbbbb;
+  --gray4: #eeeeee;
+}
+
+body {
+  color: var(--gray4);
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  line-height: normal;
+}
+
+#root {
+  background-color: var(--gray1);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.left {
+  & > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: none;
+    background-color: var(--gray1);
+    color: var(--gray4);
+    line-height: normal;
+  }
+
+  & > button.focused {
+    background-color: var(--gray4);
+    color: var(--gray1);
+  }
+}
