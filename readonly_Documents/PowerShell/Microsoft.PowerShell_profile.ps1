@@ -30,4 +30,3 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 function la { Get-ChildItem -Path . -Force | Format-Table -AutoSize }
 function ll { Get-ChildItem -Path . -Force -Hidden | Format-Table -AutoSize }
 
-

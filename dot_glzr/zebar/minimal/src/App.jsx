@@ -24,9 +24,7 @@ function App() {
   function getAudioStatus(audioOutput) {
     let device = audioOutput.defaultPlaybackDevice;
 
-    return `vol${
-      device?.name === "Headphones (Baseus Bowie E16 Stereo)" ? "(b)" : ""
-    } ${device?.volume}%`;
+    return `${device?.name} ${device?.volume}%`;
   }
 
   function getBatteryStatus(batteryOutput) {
@@ -41,7 +39,6 @@ function App() {
 
   // status config
   const statuses = [
-    // { func: getNetworkStatus, arg: "network" },
     { func: getAudioStatus, arg: "audio" },
     { func: getBatteryStatus, arg: "battery" },
     { func: getDateStatus, arg: "date" },

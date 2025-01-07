@@ -1,0 +1,15 @@
+[window]
+padding = { x = 4, y = 4 }
+
+[cursor]
+thickness = 0.3
+
+[font]
+normal = { family = "JetBrainsMonoNL NF", style = "Regular" }
+size = 10.5
+
+[colors.normal]
+blue = '#12488b'
+
+[terminal]
+shell = "pwsh"
