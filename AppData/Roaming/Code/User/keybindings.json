@@ -1,10 +1,9 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
   // Quick open
   {
     "key": "tab",
     "command": "workbench.action.acceptSelectedQuickOpenItem",
-    "when": "inQuickInput"
+    "when": "inQuickOpen"
   },
   {
     "key": "ctrl+n",

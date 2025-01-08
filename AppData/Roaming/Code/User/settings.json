@@ -12,8 +12,6 @@
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "JetBrainsMonoNL NF",
-  "editor.fontSize": 13,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
@@ -43,9 +41,9 @@
     "javascript": "javascript"
   },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.fontSize": 13,
   "terminal.integrated.gpuAcceleration": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.menuBarVisibility": "hidden",
@@ -121,7 +119,7 @@
     },
     {
       "before": ["leader", "c", "a"],
-      "commands": ["editor.action.quickFix"]
+      "commands": ["keyboard-quickfix.openQuickFix"]
     },
     {
       "before": ["leader", "f", "f"],

@@ -3,9 +3,9 @@ Governor: Default
 Autostart:
   Validate: true
 WindowsThemeMode:
-  Enabled: false
-  DarkThemePath: C:\Users\qh\AppData\Local\Microsoft\Windows\Themes\Custom.theme
-  LightThemePath: C:\Users\qh\AppData\Local\Microsoft\Windows\Themes\Custom.theme
+  Enabled: true
+  DarkThemePath: C:\Windows\Resources\Themes\dark.theme
+  LightThemePath: C:\Windows\Resources\Themes\aero.theme
   MonitorActiveTheme: false
   ApplyFlags: []
 AppsSwitch:
@@ -45,8 +45,8 @@ CursorSwitch:
   Component:
     CursorsLight: W11 Tail Cursor Light Free by Jepri Creations
     CursorsDark: 
-Sunrise: 2025-01-06T05:00:00.0000000
-Sunset: 2025-01-06T18:00:00.0000000
+Sunrise: 2025-01-07T05:00:00.0000000
+Sunset: 2025-01-07T17:00:00.0000000
 Location:
   PollingCooldownTimeSpan: 1.00:00:00
   Enabled: false
