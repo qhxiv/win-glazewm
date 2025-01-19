@@ -1,0 +1,64 @@
+:root {
+  --fg: #eeeeee;
+  --bg: #111111;
+  --selfg: #111111;
+  --selbg: #eeeeee;
+}
+
+body {
+  color: var(--fg);
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  line-height: normal;
+}
+
+#root {
+  background-color: var(--bg);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.left {
+  & > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: none;
+    background-color: var(--bg);
+    color: var(--fg);
+    line-height: normal;
+  }
+
+  & > button.focused {
+    background-color: var(--selbg);
+    color: var(--selfg);
+  }
+}
+
+.right {
+  & > * {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

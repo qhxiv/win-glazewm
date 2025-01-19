@@ -1,0 +1,191 @@
+{
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[vue]": { "editor.defaultFormatter": "Vue.volar" },
+  "breadcrumbs.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "JetBrainsMonoNL NF",
+  "editor.fontSize": 13,
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": { "strings": "on" },
+  "editor.scrollBeyondLastLine": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "explorer.compactFolders": false,
+  "explorer.sortOrder": "type",
+  "extensions.experimental.affinity": { "vscodevim.vim": 1 },
+  "extensions.ignoreRecommendations": true,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.launchpad.indicator.enabled": false,
+  "headwind.runOnSave": false,
+  "html.format.enable": false,
+  "java.completion.matchCase": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "tailwindCSS.includeLanguages": {
+    "css": "css",
+    "html": "html",
+    "javascript": "javascript"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.gpuAcceleration": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "hidden",
+  "window.title": "${rootName}",
+  "workbench.activityBar.location": "top",
+  "workbench.editor.centeredLayoutFixedWidth": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+
+  // Vim
+  "vim.cursorStylePerMode.insert": "block",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.leader": " ",
+  "vim.highlightedyank.enable": true,
+
+  "vim.sneak": true,
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Remap vim sneak to 'z' key
+    { "before": ["z"], "after": ["s"] },
+    { "before": ["Z"], "after": ["S"] },
+    { "before": ["s"], "after": ["c", "l"] },
+
+    // Buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // Splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // Panes
+    {
+      "before": ["C-h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+    // Turn off search highlighting
+    { "before": ["<Esc>"], "commands": [":nohl"] },
+
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["leader", "t", "w"],
+      "commands": ["editor.action.toggleWordWrap"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["leader", "c", "a"],
+      "commands": ["keyboard-quickfix.openQuickFix"]
+    },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "f", "g"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["leader", "f", "d"],
+      "commands": ["editor.action.formatDocument"]
+    },
+  
+    // Harpoon
+    {
+      "before": ["m", "s"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["m", "e"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["m", "l"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["m", "1"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
+    },
+    {
+      "before": ["m", "2"],
+      "commands": ["vscode-harpoon.gotoEditor2"]
+    },
+    {
+      "before": ["m", "3"],
+      "commands": ["vscode-harpoon.gotoEditor3"]
+    },
+    {
+      "before": ["m", "4"],
+      "commands": ["vscode-harpoon.gotoEditor4"]
+    },
+    {
+      "before": ["m", "5"],
+      "commands": ["vscode-harpoon.gotoEditor5"]
+    },
+  ],
+
+  "vim.visualModeKeyBindings": [
+    { "before": ["leader", "h"], "after": ["^"] },
+    { "before": ["leader", "l"], "after": ["$"] },
+
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+  ],
+
+  // paste without overriding the current register
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
+}
