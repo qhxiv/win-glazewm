@@ -266,8 +266,8 @@ keybindings:
   #   bindings: ['alt+a']
 
   # Focus the workspace that last had focus.
-  - commands: ["focus --recent-workspace"]
-    bindings: ["alt+tab"]
+  # - commands: ["focus --recent-workspace"]
+  #   bindings: ["alt+tab"]
 
   # Change focus to a workspace defined in `workspaces` config.
   - commands: ["focus --workspace 1"]

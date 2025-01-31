@@ -1,9 +1,3 @@
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\zash.omp.json" | Invoke-Expression
-
-Invoke-Expression (&scoop-search --hook)
-
-
-
 # directory alias
 function ws { cd 'D:\Documents\Workspace' }
 function nc { cd "$env:XDG_CONFIG_HOME/nvim"; nvim . } # neovim config
@@ -16,3 +10,5 @@ function ll { Get-ChildItem -Path . -Force -Hidden | Format-Table -AutoSize }
 function dotfiles() {
   git --git-dir=$HOME\.dotfiles --work-tree=$HOME @args
 }
+
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\robbyrussell.omp.json" | Invoke-Expression
