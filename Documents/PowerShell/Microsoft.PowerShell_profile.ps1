@@ -1,5 +1,4 @@
 # directory alias
-function ws { cd 'D:\Documents\Workspace' }
 function nc { cd "$env:XDG_CONFIG_HOME/nvim"; nvim . } # neovim config
 
 # linux like alias
@@ -11,4 +10,4 @@ function dotfiles() {
   git --git-dir=$HOME\.dotfiles --work-tree=$HOME @args
 }
 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\robbyrussell.omp.json" | Invoke-Expression
+(&mise activate pwsh) | Out-String | Invoke-Expression
