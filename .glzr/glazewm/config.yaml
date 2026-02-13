@@ -60,7 +60,7 @@ window_effects:
     # ** Exclusive to Windows 11 due to API limitations.
     border:
       enabled: true
-      color: "#8dbcff"
+      color: "#aeaed1"
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
@@ -256,7 +256,8 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ['shell-exec C:\Program Files\WezTerm\wezterm-gui.exe']
+  # - commands: ['shell-exec C:\Program Files\WezTerm\wezterm-gui.exe']
+  - commands: ['shell-exec alacritty']
     bindings: ["alt+enter"]
 
   # Applications launch

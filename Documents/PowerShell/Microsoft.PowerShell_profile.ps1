@@ -9,5 +9,3 @@ function ll { Get-ChildItem -Path . -Force -Hidden | Format-Table -AutoSize }
 function dotfiles() {
   git --git-dir=$HOME\.dotfiles --work-tree=$HOME @args
 }
-
-(&mise activate pwsh) | Out-String | Invoke-Expression
